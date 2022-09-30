@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v1
         with: 
           name: release-pypi.txt
-          path: build-output/pypi
+          path: build-output
