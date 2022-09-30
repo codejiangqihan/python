@@ -27,7 +27,7 @@ jobs:
           pip install lxml
       - name: 运行代码
         run: |
-          git clone https://github.com/codejiangqihan/python.git
+          git clone git@github.com:codejiangqihan/python.git
           cd python
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
           python main.py
