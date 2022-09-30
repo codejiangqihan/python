@@ -1,14 +1,28 @@
-
-- uses: name:'GitHub Actions Bot'
+# 当有改动推送到master分支时，启动Action
+name: 自动部署
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+
+  release:
+    types:
+      - published
 
 jobs:
-  bot:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 'Checkout codes'
-      run:
-        python ./main.py
+      - name: 检查分支
+        uses: actions/checkout@v2
+
+      - name: 安装 Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+          
+      - name: 运行代码
+        run: |
+          python  ./main.py
