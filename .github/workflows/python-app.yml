@@ -28,6 +28,7 @@ jobs:
           pip install lxml
       - name: 运行代码
         run: |
+          #!/usr/bin/python
           import requests
           import bs4
           import tqdm
