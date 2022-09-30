@@ -21,7 +21,7 @@ jobs:
           python-version: 3.7
       - name: 安装python库
         run: |
-          pip install gopup
+          pip install synonyms
       - name: 运行代码
         run: |
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
