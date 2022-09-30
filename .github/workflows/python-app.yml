@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout codes'
-        run: bash  "python ./main.py"
+        run: bash ./main.sh
