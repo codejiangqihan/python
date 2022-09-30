@@ -27,12 +27,9 @@ jobs:
           pip install lxml
       - name: 运行代码
         run: |
-          git clone git@github.com:codejiangqihan/python.git
-          cd python
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
-          python main.py
-          git config --global user.name "codejiangqihan"
-          git config --global user.email "jqh@codeqihan.com"
-          git add . && echo A
-          git commit -m 'upload' && echo B
-          git push -u origin main && echo C
+      - name: Publish iOS Artefacts
+        uses: actions/upload-artifact@v1
+        with: 
+          name: release-pypi.txt
+          path: build-output/pypi
