@@ -28,6 +28,7 @@ jobs:
       - name: 运行代码
         run: |
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
+          python main.py
       - name: Publish iOS Artefacts
         uses: actions/upload-artifact@v1
         with: 
