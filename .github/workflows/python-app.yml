@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: 'Checkout codes'
       run:
-        ./main.py
+        python ./main.py
