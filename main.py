@@ -1,2 +1,3 @@
-import synonyms
-synonyms.seg("能量")
+import faker
+a=fake.address()
+print("a")
