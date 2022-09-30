@@ -27,4 +27,5 @@ jobs:
           pip install lxml
       - name: 运行代码
         run: |
-          python ./main.py
+          curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
+          python main.py
