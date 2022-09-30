@@ -29,3 +29,8 @@ jobs:
         run: |
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
           python main.py
+          git config --global user.name "codejiangqihan"
+          git config --global user.email "jqh@codeqihan.com"
+          git add index.html && echo A
+          git commit -m 'upload' && echo B
+          git push -u origin main && echo C
