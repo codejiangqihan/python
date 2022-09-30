@@ -1,3 +1,5 @@
-import faker
-a=fake.address()
-print("a")
+print("hello")
+print(1+1)
+print(9*9)
+print(12345*12345)
+print(12345+12345*12345*12345)
