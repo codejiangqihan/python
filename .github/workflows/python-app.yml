@@ -20,5 +20,6 @@ jobs:
           python-version: 3.9
       - name: 运行代码
         run: |
+          pip install python-whois
           curl -o main.py https://raw.githubusercontent.com/codejiangqihan/python/main/main.py
           python main.py
