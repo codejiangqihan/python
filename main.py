@@ -1,2 +1,2 @@
 import whois
-whois.whois("codeqihan.com")
+print(whois.whois("codeqihan.com"))
